@@ -1,0 +1,42 @@
+/* initialisation des polices d'écritures */
+@font-face {
+    font-family: 'Fine College';
+    src: url('police_ecriture/fine_college/Fine College.ttf');
+}
+
+@font-face {
+    font-family: 'Rounded_Elegance';
+    src: url('police_ecriture/rounded_elegance/Rounded_Elegance.ttf');
+}
+/* ------------------------------------- */
+
+
+/* Fond d'écran */
+body{
+	background-color: #1a3d02;
+	background-image: url("http://www.transparenttextures.com/patterns/shattered.png");
+}
+
+/* titre */
+#header{
+	text-align: center;
+	margin-top: 10%;
+	font-family: 'Fine College';
+	font-size: 2em;
+}
+
+/* Ligne de séparation */
+#ligne {
+	background-image:url("images/ligne.png");
+	width: 40%;
+	list-style : none;
+	height:3px;
+	margin: 0 auto;
+}
+
+/* conteneur */
+#conteneur{
+	margin-top: 5%;
+	margin-left: 10%;
+	font-family: 'Rounded_Elegance'
+}
