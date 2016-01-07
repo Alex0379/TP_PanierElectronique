@@ -13,8 +13,8 @@
 
 /* Fond d'écran */
 body{
-	background-color: #1a3d02;
-	background-image: url("http://www.transparenttextures.com/patterns/shattered.png");
+	background-color: #7599d6;
+	background-image: url("http://www.transparenttextures.com/patterns/blu-stripes.png");
 }
 
 /* titre */
@@ -36,11 +36,99 @@ body{
 
 /* conteneur */
 #conteneur{
-	margin-top: 5%;
-	margin-left: 10%;
-	font-family: 'Rounded_Elegance'
+	margin-left: 19%;
+	font-family: "Rounded_Elegance";
+	color: #000;
 }
 
+#conteneur h2 {
+	margin-left: 43%;
+}
+
+/* Information de connexion */
 #connexion{
 	display: block;
+	margin-left: 15%;
+	margin-top: 20px;
+}
+
+/* Cadre de connexion globale*/
+#cadreConnexion{
+	padding-top: 90px;
+	height: 250px;
+}
+
+
+/* Style du bouton de connexion */
+.btnEnregistrer {
+  background: #ffbf00;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #ffbf00, #bd7100);
+  background-image: -moz-linear-gradient(top, #ffbf00, #bd7100);
+  background-image: -ms-linear-gradient(top, #ffbf00, #bd7100);
+  background-image: -o-linear-gradient(top, #ffbf00, #bd7100);
+  background-image: linear-gradient(to bottom, #ffbf00, #bd7100);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Courier New;
+  color: #000000;
+  font-size: 16px;
+  padding: 4px 8px 4px 8px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.btnEnregistrer:hover {
+  background: #de8d00;
+  background-image: -webkit-linear-gradient(top, #de8d00, #c46500);
+  background-image: -moz-linear-gradient(top, #de8d00, #c46500);
+  background-image: -ms-linear-gradient(top, #de8d00, #c46500);
+  background-image: -o-linear-gradient(top, #de8d00, #c46500);
+  background-image: linear-gradient(to bottom, #de8d00, #c46500);
+  text-decoration: none;
+}
+
+/* Bouton inscription*/
+.btnInscription{
+	background: #ffbf00;
+	margin-left: 27%;
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(top, #ffbf00, #bd7100);
+	background-image: -moz-linear-gradient(top, #ffbf00, #bd7100);
+	background-image: -ms-linear-gradient(top, #ffbf00, #bd7100);
+	background-image: -o-linear-gradient(top, #ffbf00, #bd7100);
+	background-image: linear-gradient(to bottom, #ffbf00, #bd7100);
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	font-family: Courier New;
+	color: #000000;
+	font-size: 16px;
+	padding: 4px 8px 4px 8px;
+	border: solid #000000 1px;
+	text-decoration: none;
+}
+
+.btnInscription:hover {
+  background: #de8d00;
+  background-image: -webkit-linear-gradient(top, #de8d00, #c46500);
+  background-image: -moz-linear-gradient(top, #de8d00, #c46500);
+  background-image: -ms-linear-gradient(top, #de8d00, #c46500);
+  background-image: -o-linear-gradient(top, #de8d00, #c46500);
+  background-image: linear-gradient(to bottom, #de8d00, #c46500);
+  text-decoration: none;
+}
+
+/* Style zone de remplissage de connexion */
+#identifiant {
+	height: 25px;
+	width: 250px;
+	border: 1px solid black;
+}
+
+#motdePasse{
+	height: 25px;
+	width: 250px;
+	border: 1px solid black;
 }
