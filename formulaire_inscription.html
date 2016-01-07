@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Livr'o Disque - Inscription</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style_inscription.css" />
+		<link rel="stylesheet" href="./mdl/material.min.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<div class="conteneur">
+			<div class="header">
+				<h1>Inscrivez-Vous !</h1>
+			</div>
+			<div class="formulaire">
+				<form action="#">
+					<div class="section"><span>1</span>Nom et Adresse</div>
+					<div class="contenu_form">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Nom</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Pays</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Ville</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+							<label class="mdl-textfield__label" for="sample4">Code postal</label>
+							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Adresse ligne 1</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Adresse ligne 2</label>
+						</div>
+					</div>
+					<div class="section"><span>2</span>Sexe</div>
+					<div class="contenu_form">
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+							<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+							<span class="mdl-radio__label">Homme</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+							<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+							<span class="mdl-radio__label">Femme</span>
+						</label>
+					</div>
+					<div class="section"><span>3</span>Date de naissance et moyen de communication</div>
+					<div class="contenu_form">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Date de naissance</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Addresse mail</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+							<label class="mdl-textfield__label" for="sample4">Téléphone</label>
+							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
+						</div>
+					</div>
+					<div class="section"><span>4</span>Type de Carte</div>
+					<div class="contenu_form">
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+							<input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+							<span class="mdl-radio__label">MasterCard</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+							<input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+							<span class="mdl-radio__label">Visa</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+							<input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
+							<span class="mdl-radio__label">CarteBleu</span>
+						</label>
+					</div>
+					<div class="section"><span>5</span>Numéro de Carte</div>
+					<div class="contenu_form">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+							<label class="mdl-textfield__label" for="sample4">Numéro de Carte</label>
+							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Date d'expiration</label>
+						</div>
+					</div>
+					<div class="section"><span>6</span>Identifiant et Mot de passe</div>
+					<div class="contenu_form">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Identifiant</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Mot de passe</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3">Confirmer mot de passe</label>
+						</div>
+					</div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+						S'inscrire
+					</button>
+				</form>
+			</div>
+		</div>
+		<script src="./mdl/material.min.js"></script>
+	</body>
+</html>

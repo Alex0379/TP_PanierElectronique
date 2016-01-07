@@ -1,0 +1,68 @@
+/* initialisation des polices d'écritures */
+@font-face {
+    font-family: 'Fine College';
+    src: url('police_ecriture/fine_college/Fine College.ttf');
+}
+
+@font-face {
+    font-family: 'Rounded_Elegance';
+    src: url('police_ecriture/rounded_elegance/Rounded_Elegance.ttf');
+}
+/* ------------------------------------- */
+
+
+/* Fond d'écran */
+body{
+	background-color: #1a3d02;
+	background-image: url("http://www.transparenttextures.com/patterns/shattered.png");
+}
+
+.conteneur{
+    background-color: white;
+    margin: 100px auto;
+    width: 960px;
+    border-radius: 10px;
+}
+
+.formulaire{
+    padding:30px;
+}
+
+.header{
+    top: 0;
+    height: 100px;
+    background-color: #3F51B5;
+    color: white;
+    border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+    vertical-align: middle;
+    padding: 5px 0px 30px 30px;
+    
+}
+
+.contenu_form{
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.section{
+    font-size: 20px;
+    color: #3F51B5;
+    margin-bottom: 5px;
+}
+
+.section span {
+    background: #3F51B5;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
+}
