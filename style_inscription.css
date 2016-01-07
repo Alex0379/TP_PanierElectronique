@@ -13,8 +13,7 @@
 
 /* Fond d'écran */
 body{
-	background-color: #1a3d02;
-	background-image: url("http://www.transparenttextures.com/patterns/shattered.png");
+	background: url(images/grey_wash_wall.png);
 }
 
 .conteneur{
@@ -37,7 +36,11 @@ body{
 	border-top-right-radius: 9px;
     vertical-align: middle;
     padding: 5px 0px 30px 30px;
-    
+}
+
+.footer{
+    bottom: 0;
+    text-align: right;
 }
 
 .contenu_form{
@@ -45,6 +48,15 @@ body{
     background: #F8F8F8;
     border-radius: 6px;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+.mdl-textfield{
+    margin: 0 5% !important;
+}
+
+.mdl-radio{
+    margin: 0 10% !important;
 }
 
 .section{
