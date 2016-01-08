@@ -16,6 +16,10 @@ body{
 	background: url(images/grey_wash_wall.png);
 }
 
+.mdl-layout__container{
+    top: 0;
+}
+
 .conteneur{
     background-color: white;
     margin: 100px auto;
