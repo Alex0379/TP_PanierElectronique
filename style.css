@@ -11,11 +11,6 @@
 /* ------------------------------------- */
 
 @media screen and (max-width: 1680px) {
-	/* Fond d'écran */
-	body{
-		background-color: #5E66A4;
-		background-image: url("http://www.transparenttextures.com/patterns/blu-stripes.png");
-	}
 
 	/* titre */
 	#header{
@@ -241,8 +236,75 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
-	body{
-			background-color: orange;
-		}
+
+/* Fond d'écran */
+body{
+	background: url(images/grey_wash_wall.png);
+}
+
+.mdl-layout__container{
+    top: 0;
+}
+
+.conteneur{
+    background-color: white;
+    margin: 100px auto;
+    width: 960px;
+    border-radius: 10px;
+}
+
+.formulaire{
+    padding:30px;
+}
+
+.header{
+    top: 0;
+    height: 100px;
+    background-color: #3F51B5;
+    color: white;
+    border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+    vertical-align: middle;
+    padding: 5px 0px 30px 30px;
+}
+
+.footer{
+    bottom: 0;
+    text-align: right;
+}
+
+.contenu_form{
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mdl-textfield{
+    margin: 0 5% !important;
+}
+
+.mdl-radio{
+    margin: 0 10% !important;
+}
+
+.section{
+    font-size: 20px;
+    color: #3F51B5;
+    margin-bottom: 5px;
+}
+
+.section span {
+    background: #3F51B5;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
 }
