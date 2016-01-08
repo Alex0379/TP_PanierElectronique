@@ -13,7 +13,7 @@
 
 /* Fond d'écran */
 body{
-	background: url(images/grey_wash_wall.png);
+	background: url(../images/grey_wash_wall.png);
 }
 
 .mdl-layout__container{
@@ -81,4 +81,14 @@ body{
     margin-left: -45px;
     color: #fff;
     margin-top: -3px;
+}
+
+
+table{
+    width: 80%;
+    margin: auto;
+}
+
+.panier{
+    padding: 30px;
 }
