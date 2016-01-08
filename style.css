@@ -1,7 +1,7 @@
 /* initialisation des polices d'écritures */
 @font-face {
-    font-family: 'Fine College';
-    src: url('police_ecriture/fine_college/Fine College.ttf');
+    font-family: 'Cocomat Light-trial';
+    src: url('police_ecriture/cocomat/Cocomat Light-trial.ttf');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 @media screen and (max-width: 1680px) {
 	/* Fond d'écran */
 	body{
-		background-color: #7599d6;
+		background-color: #5E66A4;
 		background-image: url("http://www.transparenttextures.com/patterns/blu-stripes.png");
 	}
 
@@ -21,8 +21,8 @@
 	#header{
 		text-align: center;
 		margin-top: 10%;
-		font-family: 'Fine College';
-		font-size: 2em;
+		font-family: 'Cocomat Light-trial';
+		font-size: 2.1em;
 	}
 
 	/* Ligne de séparation */
@@ -34,29 +34,27 @@
 		margin: 0 auto;
 	}
 
-	/* conteneur */
-	#conteneur{
-		margin-left: 19%;
-		font-family: "Rounded_Elegance";
-		color: #000;
-	}
-
-	#conteneur h2 {
-		margin-left: 43%;
-	}
-
-	/* Information de connexion */
-	#connexion{
-		display: block;
-		margin-left: 15%;
-		margin-top: 20px;
-	}
-
 	/* Cadre de connexion globale*/
 	#cadreConnexion{
 		padding-top: 90px;
 		height: 250px;
+		width: 40%;
+		margin-left: 23%;
+		font-size: 0.7em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
 	}
+	
+	#cadreInscription{
+	    width: 37%;
+		/*margin-left: 62%;*/
+		font-size: 0.7em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+		height: 250px;
+		vertical-align: bottom;
+	}
+}
 
 
 	/* Style du bouton de connexion */
@@ -92,7 +90,6 @@
 	/* Bouton inscription*/
 	.btnInscription{
 		background: #ffbf00;
-		margin-left: 27%;
 		cursor: pointer;
 		background-image: -webkit-linear-gradient(top, #ffbf00, #bd7100);
 		background-image: -moz-linear-gradient(top, #ffbf00, #bd7100);
@@ -139,154 +136,108 @@
 		background-color: red;
 	}
 	
-	/* titre */
-	#header{
-		text-align: center;
-		margin-top: 10%;
-		font-family: 'Fine College';
-		font-size: 1.8em;
-	}
 	
-	/* conteneur */
-	#conteneur{
-		margin-left: 15%;
-		font-family: "Rounded_Elegance";
-		color: #000;
-		font-size: 0.8em;
-	}
-
-	#conteneur h2 {
-		margin-left: 43%;
-	}
-
-	/* Information de connexion */
-	#connexion{
-		display: block;
-		margin-left: 15%;
-		margin-top: 20px;
-	}
-
-	/* Cadre de connexion globale*/
-	#cadreConnexion{
-		padding-top: 90px;
-		height: 250px;
-	}
 }
 
 @media screen and (max-width: 980px) {
-	body{
-			background-color: pink;
-		}
+	
 		
 	/* titre */
 	#header{
 		text-align: center;
 		margin-top: 10%;
-		font-family: 'Fine College';
-		font-size: 1.5em;
+		font-family: 'Cocomat Light-trial';
+		font-size: 1.8em;
 	}
 	
-	/* conteneur */
-	#conteneur{
-		margin-left: 12%;
-		font-family: "Rounded_Elegance";
-		color: #000;
-		font-size: 0.7em;
-	}
-
-	#conteneur h2 {
-		margin-left: 43%;
-	}
-
-	/* Information de connexion */
-	#connexion{
-		display: block;
-		margin-left: 15%;
-		margin-top: 20px;
-	}
-
 	/* Cadre de connexion globale*/
 	#cadreConnexion{
 		padding-top: 90px;
 		height: 250px;
+		width: 40%;
+		margin-left: 17%;
+		font-size: 0.7em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+	}
+	
+	#cadreInscription{
+	    width: 37%;
+		/*margin-left: 62%;*/
+		font-size: 0.7em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+		height: 250px;
+		vertical-align: bottom;
 	}
 }
 
 @media screen and (max-width: 840px) {
-	body{
-			background-color: green;
-		}
+	
 		
 	/* titre */
 	#header{
 		text-align: center;
 		margin-top: 10%;
-		font-family: 'Fine College';
-		font-size: 1.2em;
+		font-family: 'Cocomat Light-trial';
+		font-size: 1.6em;
 	}
 	
-	/* conteneur */
-	#conteneur{
-		margin-left: 4%;
-		font-family: "Rounded_Elegance";
-		color: #000;
-		font-size: 0.6em;
-	}
-
-	#conteneur h2 {
-		margin-left: 43%;
-	}
-
-	/* Information de connexion */
-	#connexion{
-		display: block;
-		margin-left: 15%;
-		margin-top: 20px;
-	}
-
 	/* Cadre de connexion globale*/
 	#cadreConnexion{
 		padding-top: 90px;
 		height: 250px;
+		width: 40%;
+		margin-left: 14%;
+		font-size: 0.6em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
 	}
+	
+	#cadreInscription{
+	    width: 37%;
+		margin-left: 8%;
+		font-size: 0.6em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+		height: 250px;
+		vertical-align: bottom;
+	}	
 }
 
 @media screen and (max-width: 736px) {
-	body{
-			background-color: grey;
-		}
-		
+	
 	/* titre */
 	#header{
 		text-align: center;
 		margin-top: 10%;
-		font-family: 'Fine College';
-		font-size: 0.9em;
+		font-family: 'Cocomat Light-trial';
+		font-size: 1em;
 	}
 	
-	/* conteneur */
-	#conteneur{
-		margin-left: 10%;
-		font-family: "Rounded_Elegance";
-		color: #000;
-		font-size: 0.4em;
-	}
-
-	#conteneur h2 {
-		margin-left: 43%;
-	}
-
-	/* Information de connexion */
-	#connexion{
-		display: block;
-		margin-left: 0;
-		margin-top: 20px;
-	}
-
 	/* Cadre de connexion globale*/
 	#cadreConnexion{
 		padding-top: 90px;
 		height: 250px;
+		width: 40%;
+		margin-left: 4%;
+		font-size: 0.4em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+	}
+	
+	#cadreConnexion a{
+			font-size: 1.5em;
+	}
+	
+	#cadreInscription{
+	    width: 37%;
+		margin-left: 19%;
+		font-size: 0.4em;
+		font-family: 'Rounded_Elegance';
+		display: inline-block;
+		height: 250px;
+		vertical-align: bottom;
 	}
 }
 
