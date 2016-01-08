@@ -135,7 +135,6 @@
 }
 
 @media screen and (max-width: 980px) {
-	
 		
 	/* titre */
 	#header{
@@ -307,4 +306,14 @@ body{
     margin-left: -45px;
     color: #fff;
     margin-top: -3px;
+}
+
+.mdl-mega-footer{
+	bottom: 0;
+}
+
+#conteneurIndex{
+	margin-top: 100px;
+	background-color: #E6E6E6;
+	
 }
