@@ -1,0 +1,14 @@
+
+
+
+#entete img {
+	width:100%
+}
+
+#navigation {
+		background-image:url("images/barreNav.jpg");
+		width: 100%;
+		list-style : none;
+		height:50px;
+		margin: 0 auto;
+	}

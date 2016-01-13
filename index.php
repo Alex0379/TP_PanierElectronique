@@ -1,7 +1,8 @@
 <?php
 	include_once('header.html');
 ?>
-
+	
+	<br />
 	<div class="conteneur">
 		<p> Les règles suivantes s'appliquent : </p>
 		<ul>
@@ -25,6 +26,6 @@
 		</form>
 		
 	</div>
-
+	<br />
 
 <?php include_once("footer.html"); ?>
