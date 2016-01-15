@@ -27,10 +27,18 @@
 				
 				<div class="buttonRight">
 					<label>Dans le groupe : </label>
-					<SELECT name="categorie" size="1" style="width:200px"></SELECT>
+					<SELECT name="categorie" size="1" style="width:200px">
+						<option value="livreTitre">Livres par titre</option>
+						<option value="livreAuteur">Livres par auteur</option>
+						<option value="albumTitre">Albums par titre</option>
+						<option value="albumAuteur">Albums par auteur</option>
+						<option value="catalogueComplet">Catalogue complet</option>
+					</SELECT>
 				</div>				
 			</div>
-			<input class="btnRechercheIndex" value=" Lancer la recherche " onclick="" type="submit">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnRechercheIndex">
+				Rechercher
+			</button>
 		</form>
 		</div>
 	</div>
