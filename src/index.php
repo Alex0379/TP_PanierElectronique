@@ -4,6 +4,11 @@
 	
 	<br />
 	<div class="conteneur">
+	<div class="header">
+		<h1> Bienvenue sur Livr'O Disque</h1>
+	</div>
+	
+	<div class="reglesRecherche">
 		<p> Les règles suivantes s'appliquent : </p>
 		<ul>
 			<li> Les articles peuvent être recherchés par Titre et Auteur/Interprète de Livre/CD.</li>
@@ -14,17 +19,20 @@
 		</ul>
 		
 		<form method="post" action="">
-				<label>Chercher :</label> 
-				<input type="text" name="chercher" id="chercherIndex" placeholder="" size="30" maxlength="10" />
-				<br />
-				<br />
-				<label>Dans le groupe : </label>
-				<SELECT name="categorie" size="1" style="width:200px"></SELECT>
-				<br />
-				<br />				
-				<input class="btnRechercheIndex" value=" Lancer la recherche " onclick="" type="submit">
+			<div class="panier">
+				<div class="buttonLeft">
+					<label>Chercher :</label> 
+					<input type="text" name="chercher" id="chercherIndex" placeholder="" size="30" maxlength="10" />
+				</div>
+				
+				<div class="buttonRight">
+					<label>Dans le groupe : </label>
+					<SELECT name="categorie" size="1" style="width:200px"></SELECT>
+				</div>				
+			</div>
+			<input class="btnRechercheIndex" value=" Lancer la recherche " onclick="" type="submit">
 		</form>
-		
+		</div>
 	</div>
 	<br />
 
