@@ -1,12 +1,12 @@
 /* initialisation des polices d'écritures */
 @font-face {
     font-family: 'Cocomat Light-trial';
-    src: url('police_ecriture/cocomat/Cocomat Light-trial.ttf');
+    src: url('../police_ecriture/cocomat/Cocomat Light-trial.ttf');
 }
 
 @font-face {
     font-family: 'Rounded_Elegance';
-    src: url('police_ecriture/rounded_elegance/Rounded_Elegance.ttf');
+    src: url('../police_ecriture/rounded_elegance/Rounded_Elegance.ttf');
 }
 /* ------------------------------------- */
 
@@ -22,7 +22,7 @@
 
 	/* Ligne de séparation */
 	#ligne {
-		background-image:url("images/ligne.png");
+		background-image:url("../images/ligne.png");
 		width: 40%;
 		list-style : none;
 		height:3px;
@@ -238,7 +238,7 @@
 
 /* Fond d'écran */
 body{
-	background: url(images/grey_wash_wall.png);
+	background: url(../images/grey_wash_wall.png);
 }
 
 .mdl-layout__container{
