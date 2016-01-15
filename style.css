@@ -249,7 +249,7 @@ body{
     background-color: white;
     margin: 100px auto;
     width: 960px;
-    
+    border-radius: 10px;
 }
 
 .formulaire{
@@ -308,6 +308,23 @@ body{
     margin-top: -3px;
 }
 
+.panier{
+    padding: 10px;
+}
+
+.articlesPanier{
+    width: 940px !important; 
+    margin: auto !important;
+}
+
+.buttonRight{
+    float: right;
+}
+
+buttonLeft{
+    float: left;
+}
+
 .mdl-mega-footer{
 	bottom: 0;
 }
@@ -316,4 +333,8 @@ body{
 	margin-top: 100px;
 	background-color: #E6E6E6;
 	
+}
+
+.mdl-data-table__text-center{
+    text-align: center !important;
 }
