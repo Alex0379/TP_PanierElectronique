@@ -352,31 +352,4 @@ body{
 
 .btnRechercheIndex {
 	margin-top: 30px;
-	background: #ffbf00;
-	cursor: pointer;
-	background-image: -webkit-linear-gradient(top, #ffbf00, #bd7100);
-	background-image: -moz-linear-gradient(top, #ffbf00, #bd7100);
-	background-image: -ms-linear-gradient(top, #ffbf00, #bd7100);
-	background-image: -o-linear-gradient(top, #ffbf00, #bd7100);
-	background-image: linear-gradient(to bottom, #ffbf00, #bd7100);
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px;
-	font-family: Courier New;
-	color: #000000;
-	font-size: 16px;
-	padding: 4px 8px 4px 8px;
-	border: solid #000000 1px;
-	text-decoration: none;
 	}
-
-	.btnRechercheIndex:hover {
-	  background: #de8d00;
-	  background-image: -webkit-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -moz-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -ms-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -o-linear-gradient(top, #de8d00, #c46500);
-	  background-image: linear-gradient(to bottom, #de8d00, #c46500);
-	  text-decoration: none;
-	}
-}
