@@ -2,7 +2,7 @@
 
 <!-- Corps -->
         <div class="conteneur">
-            <div class="header" style="text-align: center;">
+            <div class="header">
 				<h1>Votre panier</h1>
 			</div>
             <div class="panier">
@@ -46,7 +46,7 @@
                     Continuer mes achats
                 </button>
 
-                <button class="buttonLeft mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
                     Poursuivre ma commande
                 </button>
             </div>

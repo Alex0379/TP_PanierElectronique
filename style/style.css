@@ -265,6 +265,7 @@ body{
 	border-top-right-radius: 9px;
     vertical-align: middle;
     padding: 5px 0px 30px 30px;
+    text-align: center;
 }
 
 .footer{
@@ -321,7 +322,7 @@ body{
     float: right;
 }
 
-buttonLeft{
+.buttonLeft{
     float: left;
 }
 

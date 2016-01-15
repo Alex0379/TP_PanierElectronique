@@ -1,8 +1,19 @@
 <?php include_once('header_admin.html'); ?>
 
         <div class="conteneur">
-            <div class="header">
-				<h1>Liste des utilisateurs</h1>
+            <div class="header" style="text-align: center;">
+				<h1>Liste des utilisateurs</h1><br/>
+                <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                    <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" id="sample6">
+                    <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                    </div>
+                </div>
+                </form>
 			</div>
             <div class="panier">
                 <table class=" articlesPanier mdl-data-table mdl-js-data-table mdl-shadow--2dp">

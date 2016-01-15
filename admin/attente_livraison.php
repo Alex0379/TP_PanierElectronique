@@ -1,7 +1,7 @@
 <?php include_once('header_admin.html'); ?>
 
         <div class="conteneur">
-            <div class="header" style="text-align: center;">
+            <div class="header">
 				<h1>Commandes en attente de livraison</h1>
 			</div>
             <div class="panier">
