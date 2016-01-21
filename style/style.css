@@ -241,6 +241,7 @@ body{
 	background: url(../images/grey_wash_wall.png);
 }
 
+/* Corps */
 .mdl-layout__container{
     top: 0;
 }
@@ -353,17 +354,6 @@ body{
 .btnRechercheIndex {
 	margin-top: 30px;
 	}
-<<<<<<< HEAD
-
-	.btnRechercheIndex:hover {
-	  background: #de8d00;
-	  background-image: -webkit-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -moz-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -ms-linear-gradient(top, #de8d00, #c46500);
-	  background-image: -o-linear-gradient(top, #de8d00, #c46500);
-	  background-image: linear-gradient(to bottom, #de8d00, #c46500);
-	  text-decoration: none;
-	}
 
 .coordonneesFacture{
     width: 480px !important;
@@ -373,5 +363,3 @@ body{
 .ligneCenter{
     vertical-align: inherit !important;
 }
-=======
->>>>>>> origin/master
