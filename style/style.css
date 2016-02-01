@@ -235,12 +235,34 @@
 	}
 }
 
-
-/* Fond d'écran */
-body{
-	background: url(../images/grey_wash_wall.png);
+.ligneCenter{
+    vertical-align: inherit !important;
 }
 
+#conteneurIndex{
+	margin-top: 100px;
+	background-color: #E6E6E6;
+}
+
+/* ================================== 
+               Annexes
+   ================================== */
+/* mdl */
+.mdl-textfield{
+    margin: 0 5% !important;
+}
+
+.mdl-radio{
+    margin: 0 10% !important;
+}
+
+.mdl-data-table__text-center{
+    text-align: center !important;
+}
+
+/* ================================== 
+               Corps
+   ================================== */
 /* Corps */
 .mdl-layout__container{
     top: 0;
@@ -251,10 +273,6 @@ body{
     margin: 100px auto;
     width: 960px;
     border-radius: 10px;
-}
-
-.formulaire{
-    padding:30px;
 }
 
 .header{
@@ -274,20 +292,49 @@ body{
     text-align: right;
 }
 
-.contenu_form{
-    padding: 30px;
-    background: #F8F8F8;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    text-align: center;
+/* Fond d'écran */
+body{
+	background: url(../images/grey_wash_wall.png);
 }
 
-.mdl-textfield{
-    margin: 0 5% !important;
+/* ================================== 
+               Footer
+   ================================== */
+/* Footer */
+.mdl-mega-footer{
+	bottom: 0;
 }
 
-.mdl-radio{
-    margin: 0 10% !important;
+/* ================================== 
+               Accueil
+   ================================== */
+/* regles de Recherche */
+.reglesRecherche {
+	padding: 10px;
+	text-align: center;
+}
+
+.reglesRecherche ul {
+	text-align: left;
+}
+
+.btnRechercheIndex {
+	margin-top: 30px;
+}
+
+/* Recherche */
+.buttonLeft{
+    float: left;
+}
+
+
+
+/* ================================== 
+        Formulaire inscription
+   ================================== */
+/* Formulaire */
+.formulaire{
+    padding:30px;
 }
 
 .section{
@@ -310,6 +357,18 @@ body{
     margin-top: -3px;
 }
 
+.contenu_form{
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ================================== 
+                Panier
+   ================================== */
+/* Tableau Article */
 .panier{
     padding: 10px;
 }
@@ -323,43 +382,62 @@ body{
     float: right;
 }
 
-.buttonLeft{
-    float: left;
+.iconePanier{
+    font-size: 16px !important;
+    vertical-align: text-top !important;
+    margin-right: 4px !important;
 }
 
-.mdl-mega-footer{
-	bottom: 0;
+/* ================================== 
+                Facture
+   ================================== */
+
+/* Bandeau sous-titre */
+.renseignementCommande{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-#conteneurIndex{
-	margin-top: 100px;
-	background-color: #E6E6E6;
-	
+.numCommande{
+    vertical-align: top;
+    margin-right: 35%;
+    text-align: left;
+    display: inline-block;
 }
 
-.mdl-data-table__text-center{
-    text-align: center !important;
+.dateCommande{
+    vertical-align: top;
+    margin-left: 35%;
+    text-align: right;
+    display: inline-block;
 }
 
-/* regles de Recherche */
-.reglesRecherche {
-	padding: 10px;
-	text-align: center;
+/* Détails Commande */
+.detailsCommande{
+    margin-bottom: 50px;
 }
 
-.reglesRecherche ul {
-	text-align: left;
+.detailsCommande h5{
+    padding-left: 30px;
 }
 
-.btnRechercheIndex {
-	margin-top: 30px;
-	}
-
-.coordonneesFacture{
-    width: 480px !important;
-    margin: 30px auto !important;
+/* Adresses */
+.adresses{
+    width: 100%;
+    text-align: center;
 }
 
-.ligneCenter{
-    vertical-align: inherit !important;
+.adresseFacturation{
+    vertical-align: top;
+    margin-right: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+.adresseLivraison{
+    vertical-align: top;
+    margin-left: 20%;
+    text-align: left;
+    display: inline-block;
 }

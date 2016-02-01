@@ -21,13 +21,15 @@
 		<form method="post" action="">
 			<div class="panier">
 				<div class="buttonLeft">
-					<label>Chercher :</label> 
-					<input type="text" name="chercher" id="chercherIndex" placeholder="" size="30" maxlength="10" />
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="chercherIndex">
+                        <label class="mdl-textfield__label" for="chercherIndex">Chercher...</label>
+                    </div>
 				</div>
 				
 				<div class="buttonRight">
-					<label>Dans le groupe : </label>
-					<SELECT name="categorie" size="1" style="width:200px">
+					<label for="filtre">Dans le groupe : </label>
+					<SELECT id="filtre" name="categorie" size="1" style="width:200px">
 						<option value="livreTitre">Livres par titre</option>
 						<option value="livreAuteur">Livres par auteur</option>
 						<option value="albumTitre">Albums par titre</option>
