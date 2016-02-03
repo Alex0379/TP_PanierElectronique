@@ -4,5 +4,5 @@
     $DB_PASSWORD="php";     // Mot de passe de la base de données
     $DB="boutique";         // Base de données renfermant les tables 
     $HTTP_HOST="localhost"; // Hôte HTTP 
-    $DOCROOT="boutique";    // Chemin d'accès vers l'emplacement de l'application
+    $DOCROOT="TP_PanierElectronique";    // Chemin d'accès vers l'emplacement de l'application
 ?>
