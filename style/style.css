@@ -441,3 +441,47 @@ body{
     text-align: left;
     display: inline-block;
 }
+
+
+/* ================================== 
+                Articles
+   ================================== */
+   
+   /* Articles */
+   
+.album
+	{
+		width: 100%;
+	}
+	
+.articleDisco 
+	{
+		width: 100%;
+		min-height: 170px;
+	}
+	
+.articleBiblio
+	{
+		width: 100%;
+		min-height: 205px;
+	}
+	
+.imageDisco, .descriptionArticle, .boutonArticle, .imageBiblio
+	{
+		width: 33%;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle !important;
+	}
+	
+.imageDisco img
+	{
+		width: 100px;
+		height: 100px;
+	}
+	
+.imageBiblio img
+	{
+		width: 100px;
+		height: 175px;
+	}
