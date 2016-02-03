@@ -19,12 +19,7 @@
                             <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
                             <td>$2.90</td>
                             <td class="mdl-data-table__text-center">
-                                <button id="tt1" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">account_circle</i>
-                                </button>
-                                <div class="mdl-tooltip" for="tt1">
-                                    Dupont
-                                </div>
+                                <a class="transaction_user" href="./transaction_user.php">Dupont</a>
                             </td>
                             <td class="mdl-data-table__text-center">
                                 <button class="mdl-button mdl-js-button mdl-button--icon">
@@ -36,12 +31,7 @@
                             <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
                             <td>$1.25</td>
                             <td class="mdl-data-table__text-center">
-                                <button id="tt2" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">account_circle</i>
-                                </button>
-                                <div class="mdl-tooltip" for="tt2">
-                                    Georges
-                                </div>
+                                <a class="transaction_user" href="./transaction_user.php">Georges</a>
                             </td>
                             <td class="mdl-data-table__text-center">
                                 <button class="mdl-button mdl-js-button mdl-button--icon">
@@ -53,12 +43,7 @@
                             <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
                             <td>$2.35</td>
                             <td class="mdl-data-table__text-center">
-                                <button id="tt3" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">account_circle</i>
-                                </button>
-                                <div class="mdl-tooltip" for="tt3">
-                                    Jackie
-                                </div>
+                                <a class="transaction_user" href="./transaction_user.php">Jackie</a>
                             </td>
                             <td class="mdl-data-table__text-center">
                                 <button class="mdl-button mdl-js-button mdl-button--icon">

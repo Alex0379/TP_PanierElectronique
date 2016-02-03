@@ -24,7 +24,11 @@
                             <td>25</td>
                             <td>$2.90</td>
                             <td>
-                                
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quantite1">
+                                    <label class="mdl-textfield__label" for="quantite1">Quantité...</label>
+                                    <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
+                                </div>
                             </td>
                             <td>$2.90</td>
                         </tr>
