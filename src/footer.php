@@ -57,6 +57,11 @@
             </main>
         </div>
         
+        <?php
+            require('../php/fonctions.php');
+            
+            
+        ?>
         <script src="../javascript/jquery.js"></script>
         <script src="../javascript/function.js"></script>
 		<script src="../style/mdl/material.min.js"></script>

@@ -47,10 +47,13 @@
         // supprimer toutes les anciennes variables 
         session_unset();
         if(IdentifieUtilisateur($id_utilisateur, $motdepasse)){
+            
+            global $HTTP_HOST, $DOCROOT;
+            
             $_SESSION['motdepasse'] = $motdepasse;
             $_SESSION['utilisateur'] = $id_utilisateur;
             $_SESSION['nbr_articles'] = 0;
-            header('location:index.php');
+            header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/index.php');
             exit();
         }
         else{

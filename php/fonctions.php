@@ -5,7 +5,7 @@
     function connex($base){
         global $DB_SERVER, $HTTP_HOST, $DB_LOGIN, $DB_PASSWORD, $DB, $DOCROOT;
         try{
-            $idcom = new PDO('mysql:host=localhost;dbname=boutique;charset=utf8', 'root', '');
+            $idcom = new PDO('mysql:host='.$DB_SERVER.';dbname='.$DB.';charset=utf8', $DB_LOGIN, $DB_PASSWORD);
         }
         catch(Exception $e){
             die('Erreur : ' . $e->getMessage());

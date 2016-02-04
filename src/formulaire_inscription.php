@@ -12,28 +12,28 @@
 					<div class="section"><span>1</span>Nom et Adresse</div>
 					<div class="contenu_form">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="nomPers">
+							<input class="mdl-textfield__input" type="text" name="nomPers" id="nomPers">
 							<label class="mdl-textfield__label" for="nomPers">Nom</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="pays">
+							<input class="mdl-textfield__input" type="text" name="pays" id="pays">
 							<label class="mdl-textfield__label" for="pays">Pays</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="ville">
+							<input class="mdl-textfield__input" type="text" name="ville" id="ville">
 							<label class="mdl-textfield__label" for="ville">Ville</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="codePostal">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="codePostal" id="codePostal">
 							<label class="mdl-textfield__label" for="codePostal">Code postal</label>
 							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="adresse1">
+							<input class="mdl-textfield__input" type="text" name="adresse1" id="adresse1">
 							<label class="mdl-textfield__label" for="adresse1">Adresse ligne 1</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="adresse2">
+							<input class="mdl-textfield__input" type="text" name="adresse2" id="adresse2">
 							<label class="mdl-textfield__label" for="adresse2">Adresse ligne 2</label>
 						</div>
 					</div>
@@ -53,16 +53,16 @@
 					<div class="section"><span>3</span>Année de naissance et Moyen de communication</div>
 					<div class="contenu_form">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="anneeNaissance">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="anneeNaissance" id="anneeNaissance">
 							<label class="mdl-textfield__label" for="anneeNaissance">Année de Naissance</label>
 							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="mail">
+							<input class="mdl-textfield__input" type="text" name="mail" id="mail">
 							<label class="mdl-textfield__label" for="mail">Addresse mail</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tel">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="tel" id="tel">
 							<label class="mdl-textfield__label" for="tel">Téléphone</label>
 							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
 						</div>
@@ -87,12 +87,12 @@
 					<div class="section"><span>5</span>Numéro de Carte</div>
 					<div class="contenu_form">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="numeroCarte">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="numeroCarte" id="numeroCarte">
 							<label class="mdl-textfield__label" for="numeroCarte">Numéro de Carte</label>
 							<span class="mdl-textfield__error">Ceci n'est pas un nombre...</span>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="dateExpiration">
+							<input class="mdl-textfield__input" type="text" name="dateExpiration" id="dateExpiration">
 							<label class="mdl-textfield__label" for="dateExpiration">Date d'expiration</label>
 						</div>
 					</div>
@@ -100,21 +100,21 @@
 					<div class="section"><span>6</span>Identifiant et Mot de passe</div>
 					<div class="contenu_form">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="idConnexion">
+							<input class="mdl-textfield__input" type="text" name="idConnexion" id="idConnexion">
 							<label class="mdl-textfield__label" for="idConnexion">Identifiant</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="mdp">
+							<input class="mdl-textfield__input" type="text" name="mdp" id="mdp">
 							<label class="mdl-textfield__label" for="mdp">Mot de passe</label>
 						</div>
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="confirmationMdp">
+							<input class="mdl-textfield__input" type="text" name="confirmationMdp" id="confirmationMdp">
 							<label class="mdl-textfield__label" for="confirmationMdp">Confirmer mot de passe</label>
 						</div>
 					</div>
 					
 					<div class="footer">
-						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
 							S'inscrire
 						</button>
 					</div>
@@ -122,5 +122,32 @@
 			</div>
 		</div>
 
+<?php
+    require('../php/fonctions.php');
+    
+    if(isset($_POST['identifiant'])){
+        // Récupération des valeurs
+        $id_utilisateur=$_POST['identifiant'];
+        $motdepasse=$_POST['motdepasse'];
+        
+        // supprimer toutes les anciennes variables 
+        session_unset();
+        if(IdentifieUtilisateur($id_utilisateur, $motdepasse)){
+            
+            global $HTTP_HOST, $DOCROOT;
+            
+            $_SESSION['motdepasse'] = $motdepasse;
+            $_SESSION['utilisateur'] = $id_utilisateur;
+            $_SESSION['nbr_articles'] = 0;
+            header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/index.php');
+            exit();
+        }
+        else{
+            echo('Erreur interne');
+            exit();
+        }
+    }
+    
+?>
 
-<?php include_once("footer.html"); ?>
+<?php include_once("footer.php"); ?>
