@@ -18,11 +18,11 @@
 			<li> Ajouter plusieurs fois le même article ne modifie pas la quantité.</li>
 		</ul>
 		
-		<form method="post" action="">
+		<form method="post" action="resultatRecherche.php">
 			<div class="panier">
 				<div class="buttonLeft">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" id="chercherIndex">
+                        <input class="mdl-textfield__input" type="text" name="motcle" id="chercherIndex">
                         <label class="mdl-textfield__label" for="chercherIndex">Chercher...</label>
                     </div>
 				</div>
@@ -38,7 +38,7 @@
 					</SELECT>
 				</div>				
 			</div>
-			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnRechercheIndex">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btnRechercheIndex" type="submit" name="rechercher"> 
 				Rechercher
 			</button>
 		</form>

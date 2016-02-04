@@ -49,6 +49,10 @@
 		height: 250px;
 		vertical-align: bottom;
 	}
+	
+	#cadreInscription a{
+		text-decoration: none;
+	}
 }
 
 
