@@ -127,18 +127,34 @@
     
     if(isset($_POST['identifiant'])){
         // Récupération des valeurs
-        $id_utilisateur=$_POST['identifiant'];
-        $motdepasse=$_POST['motdepasse'];
+        $nom                =   $_POST['nomPers'];
+        $pays               =   $_POST['pays'];
+        $ville              =   $_POST['ville'];
+        $codepostal         =   $_POST['codePostal'];
+        $adresse_ligne1     =   $_POST['adresse1'];
+        $adresse_ligne2     =   $_POST['adresse2'];
+        $sexe               =   $_POST['sexe'];
+        $an_naissance       =   $_POST['anneeNaissance'];
+        $adresse_mail       =   $_POST['mail'];
+        $telephone          =   $_POST['tel'];
+        $type_carte         =   $_POST['typeCarte'];
+        $no_carte           =   $_POST['numeroCarte'];
+        $date_expiration    =   $_POST['dateExpiration'];
+        $id_utilisateur     =   $_POST['idConnexion'];
+        $motdepasse         =   $_POST['mdp'];
+        $confirmationMdp    =   $_POST['confirmationMdp'];
         
-        // supprimer toutes les anciennes variables 
-        session_unset();
-        if(IdentifieUtilisateur($id_utilisateur, $motdepasse)){
+        
+        if($motdepasse == $confirmationMdp){
             
+        }
+          
+          
+          
+          
+          
             global $HTTP_HOST, $DOCROOT;
             
-            $_SESSION['motdepasse'] = $motdepasse;
-            $_SESSION['utilisateur'] = $id_utilisateur;
-            $_SESSION['nbr_articles'] = 0;
             header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/index.php');
             exit();
         }

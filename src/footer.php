@@ -58,7 +58,7 @@
         </div>
         
         <?php
-            require('../php/fonctions.php');
+            
             
             
         ?>

@@ -103,4 +103,8 @@
 	</div>
 	<br />
 
+<<<<<<< HEAD
 <?php include_once("../src/footer.php"); ?>
+=======
+<?php include_once("footer.php"); ?>
+>>>>>>> origin/master
