@@ -24,11 +24,11 @@
 						break;
 						
 					case "albumTitre":
-						$requete1 = "SELECT * FROM boutique_livre WHERE titre LIKE '%$motcle%'";
+						$requete1 = "SELECT * FROM boutique_musique WHERE titre LIKE '%$motcle%'";
 						break;
 						
 					case "albumAuteur":
-						$requete1 = "SELECT * FROM boutique_livre WHERE auteur LIKE '%$motcle%'";
+						$requete1 = "SELECT * FROM boutique_musique WHERE auteur LIKE '%$motcle%'";
 						break;
 						
 					case "catalogueComplet":
@@ -103,8 +103,5 @@
 	</div>
 	<br />
 
-<<<<<<< HEAD
+
 <?php include_once("../src/footer.php"); ?>
-=======
-<?php include_once("footer.php"); ?>
->>>>>>> origin/master
