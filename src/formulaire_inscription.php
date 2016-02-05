@@ -125,35 +125,33 @@
 <?php
     require('../php/fonctions.php');
     
-    if(isset($_POST['identifiant'])){
+    if(isset($_POST['idConnexion'])){
         // Récupération des valeurs
-        $nom                =   $_POST['nomPers'];
-        $pays               =   $_POST['pays'];
-        $ville              =   $_POST['ville'];
-        $codepostal         =   $_POST['codePostal'];
-        $adresse_ligne1     =   $_POST['adresse1'];
-        $adresse_ligne2     =   $_POST['adresse2'];
-        $sexe               =   $_POST['sexe'];
-        $an_naissance       =   $_POST['anneeNaissance'];
-        $adresse_mail       =   $_POST['mail'];
-        $telephone          =   $_POST['tel'];
-        $type_carte         =   $_POST['typeCarte'];
-        $no_carte           =   $_POST['numeroCarte'];
-        $date_expiration    =   $_POST['dateExpiration'];
-        $id_utilisateur     =   $_POST['idConnexion'];
-        $motdepasse         =   $_POST['mdp'];
-        $confirmationMdp    =   $_POST['confirmationMdp'];
-        
+        $nom                =   trim($_POST['nomPers']);
+        $pays               =   trim($_POST['pays']);
+        $ville              =   trim($_POST['ville']);
+        $codepostal         =   trim($_POST['codePostal']);
+        $adresse_ligne1     =   trim($_POST['adresse1']);
+        $adresse_ligne2     =   trim($_POST['adresse2']);
+        $sexe               =   trim($_POST['sexe']);
+        $an_naissance       =   trim($_POST['anneeNaissance']);
+        $adresse_mail       =   trim($_POST['mail']);
+        $telephone          =   trim($_POST['tel']);
+        $type_carte         =   trim($_POST['typeCarte']);
+        $no_carte           =   trim($_POST['numeroCarte']);
+        $date_expiration    =   trim($_POST['dateExpiration']);
+        $id_utilisateur     =   trim($_POST['idConnexion']);
+        $motdepasse         =   trim($_POST['mdp']);
+        $confirmationMdp    =   trim($_POST['confirmationMdp']);
         
         if($motdepasse == $confirmationMdp){
-            
-        }
-          
-          
-          
-          
-          
             global $HTTP_HOST, $DOCROOT;
+            
+            INSERT INTO `boutique`.`profil_utilisateur` (`nom`, `id_utilisateur`, `motdepasse`, `adresse_ligne1`, `adresse_ligne2`,
+                        `ville`, `pays`, `codepostal`, `sexe`, `an_naissance`, `adresse_email`, `telephone`, `no_carte`, 
+                        `date_expiration`, `type_carte`)
+            VALUES ('$nom', '$id_utilisateur', '$motdepasse', '$adresse_ligne1', '$adresse_ligne2', '$ville', '$pays', '$codepostal',
+                    '$sexe', '$an_naissance', '$adresse_mail', '$telephone', '$no_carte', '$date_expiration', '$type_carte');
             
             header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/index.php');
             exit();
