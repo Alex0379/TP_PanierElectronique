@@ -1,4 +1,13 @@
-<?php include_once('header.html'); ?>
+<?php 
+	include_once('header.php'); 
+	
+	// Vérification de la connexion utilisateur, sinon retour sur la page de connexion / inscription
+	if(!isset($_SESSION['utilisateur'])){
+        	global $HTTP_HOST, $DOCROOT;
+			header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/inscription-connexion.php');            
+		}
+		
+?>
 
 <!-- Corps -->
         <div class="conteneur">

@@ -1,7 +1,12 @@
 <?php
-	include_once('header.html');
-	session_start();
-	require('../php/fonctions.php');
+	include_once('header.php');
+	
+	// Vérification de la connexion utilisateur, sinon retour sur la page de connexion / inscription
+	if(!isset($_SESSION['utilisateur'])){
+        	global $HTTP_HOST, $DOCROOT;
+			header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/inscription-connexion.php');            
+		}
+		
 				// Récupération des saisies
 				$motcle= $_POST['motcle'];
 				$categorie= $_POST['categorie'];
@@ -79,7 +84,7 @@
 												}?> </p> <p> <?php echo $donnees["type_article"] ?> </p> <p> <?php echo $donnees["prix"] ."€" ?></p>
 								</div>
 								<div class="boutonArticle">
-									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" name="ajoutArticle">
 											Ajouter au panier
 									</button>
 									<input type="hidden" name="no_article_choisi" value="<?php echo $donnees["no_article"]; ?>">
@@ -94,6 +99,11 @@
 							if($succesRecherche=="NO")
 							{
 								echo "<h4> Aucun article identifié.</h4>";
+							}
+							
+							if(isset($_POST["ajoutArticle"]))
+							{
+								ajoutPanier();
 							}
 							?>
 					</div>		

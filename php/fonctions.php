@@ -48,9 +48,41 @@
 	// Fonction ajoutPanier()
 	function ajoutPanier()
 	{
+		global $DB;
 		// Récupération des articles (valeurs renvoyées par les boutons).
 		$idArticle = $_POST["no_article_choisi"];
 		$typeArticleChoisi = $_POST["type_article_choisi"];
+		
+		// Nouvelle requête pour récupérer les informations détaillées des articles.
+			// Connexion à la base de données.
+			$idcom = connex($DB);
+			
+			// Condition pour les requêtes SQL
+			switch ($typeArticleChoisi)
+			{
+				case "Livre":
+					$requete="SELECT * FORM boutique_livre WHERE no_article = '$idArticle'";
+					break;
+					
+				default :
+					$requete="SELECT * FORM boutique_musique WHERE no_article = '$idArticle'";
+			}
+			
+			// Lancement de la requête.
+			$resultat=$idcom->query($requete) or die("erreur requête");
+			while ($donnees = $resultat->fetch())
+			{
+				$titre = $donnees["titre"];
+				if ($donnees["type_article"]=="Livre")
+				{
+					$auteur_artiste=$donnees["auteur"];
+				}
+				else
+				{
+					$auteur_artiste=$donnees["artiste"];
+				}
+				$prix=$donnees["prix"];
+			}
 		
 		// Mise en place d'un drapeau
 		$present=false;
@@ -69,10 +101,16 @@
 			}
 			
 		else
+		// SESSION on place ces variables dans des variables de session.
 			{
-				$_SESSION["nbr_articles"]++;
 				$_SESSION["noArticles"][]=$idArticle;
 				$_SESSION["typeArticle"][]=$typeArticleChoisi;
+				$_SESSION["titre"][]=$titre;
+				$_SESSION["auteur_artiste"][]=$auteur_artiste;
+				$_SESSION["prix"][]=$prix;
+				$_SESSION["quantite"][]=1; // Quantité toujours fixée à 1 par défaut pour l'article sélectionné.
+				$_SESSION["nbr_articles"]++; // Incrémentation de la quantité d'articles.
+				//echo "<h3>L'article suivant a été ajouté à votre panier électronique...</h3>";
 			}
 	}
 ?>

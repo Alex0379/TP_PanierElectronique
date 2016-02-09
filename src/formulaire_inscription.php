@@ -1,5 +1,5 @@
 <?php
-	include_once('header.html');
+	include_once('header.php');
 ?>
 
 <!-- Corps -->
@@ -123,7 +123,6 @@
 		</div>
 
 <?php
-    require('../php/fonctions.php');
     
     if(isset($_POST['idConnexion'])){
         // Récupération des valeurs

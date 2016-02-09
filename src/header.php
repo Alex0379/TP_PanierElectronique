@@ -24,12 +24,14 @@
                     <a class="mdl-navigation__link" href="./bibliotheque.php">Bibli'O Thèque</a>
                     <a class="mdl-navigation__link" href="./discotheque.php">Disc'O Thèque</a>
                     <a class="mdl-navigation__link" href="./panier.php">Compte</a>
-                    <button id="boutonDeco" name="boutonDeco" type="submit" class="mdl-button mdl-js-button mdl-button--icon">
-                        <i class="material-icons">power_settings_new</i>
-                    </button>
-                    <div class="mdl-tooltip" for="boutonDeco">
-                        Déconnexion
-                    </div>
+                    <form method="post">
+						<button id="boutonDeco" name="boutonDeco" type="submit" class="mdl-button mdl-js-button mdl-button--icon">
+							<i class="material-icons">power_settings_new</i>
+						</button>
+						<div class="mdl-tooltip" for="boutonDeco">
+							Déconnexion
+						</div>
+					</form>
                 </nav>
                 </div>
 			</header>
@@ -45,3 +47,13 @@
 			</div>
             <main class="mdl-layout__content">
                 
+			<?php
+				session_start();
+				require('../php/fonctions.php');
+				// Récupération des valeurs boutons/déco
+				
+				if(isset($_POST["boutonDeco"]))
+				{
+					SupprimeSession();
+				}
+			?>

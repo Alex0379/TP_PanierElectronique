@@ -1,4 +1,12 @@
-<?php include_once('header.html'); ?>
+<?php 
+	include_once('header.php'); 
+
+	// Vérification de la connexion utilisateur, sinon retour sur la page de connexion / inscription
+		if(!isset($_SESSION['utilisateur'])){
+				global $HTTP_HOST, $DOCROOT;
+				header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/inscription-connexion.php');            
+			}
+?>
 
 <!-- Corps -->
         <div class="conteneur">
@@ -18,48 +26,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>25</td>
-                            <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-                            <td>25</td>
-                            <td>$2.90</td>
-                            <td>
-                                <div class="mdl-textfield mdl-js-textfield">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quantite1">
-                                    <label class="mdl-textfield__label" for="quantite1">Quantité...</label>
-                                    <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
-                                </div>
-                            </td>
-                            <td>$2.90</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-                            <td>50</td>
-                            <td>$1.25</td>
-                            <td>
-                                <div class="mdl-textfield mdl-js-textfield">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quantite1">
-                                    <label class="mdl-textfield__label" for="quantite1">Quantité...</label>
-                                    <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
-                                </div>
-                            </td>
-                            <td>$2.90</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-                            <td>10</td>
-                            <td>$2.35</td>
-                            <td>
-                                <div class="mdl-textfield mdl-js-textfield">
-                                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quantite1">
-                                    <label class="mdl-textfield__label" for="quantite1">Quantité...</label>
-                                    <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
-                                </div>
-                            </td>
-                            <td>$2.90</td>
-                        </tr>
+						<?php
+							for($i=0; $i<$_SESSION["nbr_articles"];$i++)
+							{
+								
+						?>
+							<tr>
+								<td><?php echo $_SESSION["noArticles"][$i]; ?></td>
+								<td class="mdl-data-table__cell--non-numeric"><?php echo $_SESSION["titre"][$i]; ?></td>
+								<td><?php echo $_SESSION["auteur_artiste"][$i]; ?></td>
+								<td><?php echo $_SESSION["typeArticle"][$i]; ?></td>
+								<td>
+									<div class="mdl-textfield mdl-js-textfield">
+										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION["quantite"][$i]; ?>">
+										<label class="mdl-textfield__label" for="quantite1">Quantité...</label>
+										<span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
+									</div>
+								</td>
+								<td><?php echo $_SESSION["prix"][$i]; ?></td>
+							</tr>
+						<?php
+							} // Fermeture du FOR
+								
+						?>
                     </tbody>
                 </table>
             </div>
