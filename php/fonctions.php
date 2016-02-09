@@ -44,4 +44,35 @@
         //Détruire la session elle-même
         session_destroy();
     }
+	
+	// Fonction ajoutPanier()
+	function ajoutPanier()
+	{
+		// Récupération des articles (valeurs renvoyées par les boutons).
+		$idArticle = $_POST["no_article_choisi"];
+		$typeArticleChoisi = $_POST["type_article_choisi"];
+		
+		// Mise en place d'un drapeau
+		$present=false;
+		
+		for($i=0; $i<$_SESSION["nbr_articles"]; $i++)
+		{
+			if($_SESSION["noArticles"][$i] = $idArticle && $_SESSION["typeArticle"][$i] = $typeArticle)
+			{
+				$present=true;
+			}
+		}
+		
+		if ($present=true)
+			{
+				echo "<h3>Cet article est déjà présent dans votre panier. Vous avez la possibilité de modifier la quantité en affichant celui-ci.</h3>";
+			}
+			
+		else
+			{
+				$_SESSION["nbr_articles"]++;
+				$_SESSION["noArticles"][]=$idArticle;
+				$_SESSION["typeArticle"][]=$typeArticleChoisi;
+			}
+	}
 ?>

@@ -79,7 +79,7 @@
 												}?> </p> <p> <?php echo $donnees["type_article"] ?> </p> <p> <?php echo $donnees["prix"] ."€" ?></p>
 								</div>
 								<div class="boutonArticle">
-									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
 											Ajouter au panier
 									</button>
 									<input type="hidden" name="no_article_choisi" value="<?php echo $donnees["no_article"]; ?>">
