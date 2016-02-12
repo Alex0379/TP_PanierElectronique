@@ -37,6 +37,7 @@
 								<td><?php echo $_SESSION["auteur_artiste"][$i]; ?></td>
 								<td><?php echo $_SESSION["type_article"][$i]; ?></td>
 								<td>
+								<input type="hidden" name="no_ligne" value="<?php echo $i; ?>">
 									<div class="quantitePanier mdl-textfield mdl-js-textfield">
 										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION["quantite"][$i]; ?>">
 										<label class="mdl-textfield__label" for="quantite1">Quantité...</label>
@@ -52,15 +53,38 @@
                     </tbody>
                 </table>
             </div>
-            <div class="panier">
-                <button class="buttonRight mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-                    Valider ma commande
-                </button>
+			<form method="post" action="">
+				<div class="panier">
+					<button class="buttonRight mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="bouton" type="submit" value="validCommande">
+						Valider ma commande
+					</button>
 
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-                    Modifier la quantité
-                </button>
-            </div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="bouton" type="submit" value="modifQuantite">
+						Modifier la quantité
+					</button>
+				</div>
+			</form>
         </div>
+		
+		<?php
+			global $HTTP_HOST, $DOCROOT;
+			if(isset($_POST['bouton']))
+			{
+				switch($_POST['bouton'])
+				{
+					case "modifQuantite":
+						$_SESSION['quantite'][$_POST['no_ligne']] = $_POST['quantite'];
+						header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/panier.php');
+						break;
+						
+					case "validCommande" :
+						header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/facture.php');
+						break;
+						
+					default :
+					break;
+				}
+			}
+		?>
 
 <?php include_once("footer.php"); ?>
