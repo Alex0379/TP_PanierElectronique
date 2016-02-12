@@ -44,7 +44,13 @@
                                         <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
                                     </div>
 								</td>
-								<td><?php echo $_SESSION["prix"][$i]; ?>€</td>
+								<td><?php 
+										$prixUnitaire = $_SESSION["prix"][$i]; 
+										$quantiteArticle = $_SESSION["quantite"][$i];
+										$prixTotal = $prixUnitaire*$quantiteArticle;
+										echo $prixTotal. "€";
+									?>
+								</td>
 							</tr>
 						<?php
                                 } // Fermeture du if
