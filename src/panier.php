@@ -1,5 +1,5 @@
-<?php 
-	include_once('header.php'); 
+<?php ob_start(); ?>
+<?php include('header.php');
 
 	// Vérification de la connexion utilisateur, sinon retour sur la page de connexion / inscription
 		if(!isset($_SESSION['utilisateur'])){
@@ -26,10 +26,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <form method="post" action="">
 						<?php
 							for($i=0; $i<$_SESSION["nbr_articles"];$i++)
 							{
-								
+								if($_SESSION['quantite'][$i]>0){
 						?>
 							<tr>
 								<td><?php echo $_SESSION["no_article"][$i]; ?></td>
@@ -37,23 +38,24 @@
 								<td><?php echo $_SESSION["auteur_artiste"][$i]; ?></td>
 								<td><?php echo $_SESSION["type_article"][$i]; ?></td>
 								<td>
-								<input type="hidden" name="no_ligne" value="<?php echo $i; ?>">
-									<div class="quantitePanier mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION['quantite'][$i]; ?>">
-										<label class="mdl-textfield__label" for="quantite1">Quantité...</label>
-										<span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
-									</div>
+
+                                    <input type="hidden" name="no_ligne" value="<?php echo $i; ?>">
+                                    <div class="quantitePanier mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="quantite" value="<?php echo $_SESSION['quantite'][$i]; ?>">
+                                        <label class="mdl-textfield__label" for="quantite">Quantité...</label>
+                                        <span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
+                                    </div>
 								</td>
-								<td><?php echo $_SESSION["prix"][$i]; ?></td>
+								<td><?php echo $_SESSION["prix"][$i]; ?>€</td>
 							</tr>
 						<?php
-							} // Fermeture du FOR
+                                } // Fermeture du if
+                            } // Fermeture du FOR
 								
 						?>
                     </tbody>
                 </table>
             </div>
-			<form method="post" action="">
 				<div class="panier">
 					<button class="buttonRight mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="bouton" type="submit" value="validCommande">
 						Valider ma commande
@@ -65,15 +67,15 @@
 				</div>
 			</form>
         </div>
-		
-		<?php
-			global $HTTP_HOST, $DOCROOT;
-			if(isset($_POST['bouton']))
+        
+<?php 
+        global $HTTP_HOST, $DOCROOT;
+			if(isset($_POST["bouton"]))
 			{
-				switch($_POST['bouton'])
+				switch($_POST["bouton"])
 				{
 					case "modifQuantite":
-						$_SESSION['quantite'][$_POST['no_ligne']] = $_POST['quantite'];
+						$_SESSION["quantite"][$_POST["no_ligne"]] = $_POST["quantite"];
 						header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/panier.php');
 						break;
 						
@@ -85,6 +87,7 @@
 					break;
 				}
 			}
-		?>
-
-<?php include_once("footer.php"); ?>
+?>
+        
+<?php include("footer.php"); ?>
+<?php ob_end_flush(); ?>
