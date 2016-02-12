@@ -89,11 +89,7 @@
 		
 		for($i=0; $i<$_SESSION["nbr_articles"]; $i++)
 		{
-<<<<<<< HEAD
 			if($_SESSION["no_article"][$i] == $idArticle AND $_SESSION["type_article"][$i] == $typeArticleChoisi)
-=======
-			if($_SESSION["noArticles"][$i] = $idArticle && $_SESSION["typeArticle"][$i] = $typeArticleChoisi)
->>>>>>> origin/master
 			{
 				$present=true;
 			}
