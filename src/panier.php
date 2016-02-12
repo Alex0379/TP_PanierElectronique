@@ -39,7 +39,7 @@
 								<td>
 								<input type="hidden" name="no_ligne" value="<?php echo $i; ?>">
 									<div class="quantitePanier mdl-textfield mdl-js-textfield">
-										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION["quantite"][$i]; ?>">
+										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION['quantite'][$i]; ?>">
 										<label class="mdl-textfield__label" for="quantite1">Quantité...</label>
 										<span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>
 									</div>
@@ -78,7 +78,7 @@
 						break;
 						
 					case "validCommande" :
-						header('location://'.$HTTP_HOST.'/'.$DOCROOT.'/facture.php');
+						header('location: //'.$HTTP_HOST.'/'.$DOCROOT.'/facture.php');
 						break;
 						
 					default :
