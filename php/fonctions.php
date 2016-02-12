@@ -56,16 +56,16 @@
 		// Nouvelle requête pour récupérer les informations détaillées des articles.
 			// Connexion à la base de données.
 			$idcom = connex($DB);
-			
+            
 			// Condition pour les requêtes SQL
 			switch ($typeArticleChoisi)
 			{
 				case "Livre":
-					$requete="SELECT * FORM boutique_livre WHERE no_article = '$idArticle'";
+					$requete="SELECT * FROM boutique_livre WHERE no_article = '$idArticle'";
 					break;
 					
 				default :
-					$requete="SELECT * FORM boutique_musique WHERE no_article = '$idArticle'";
+					$requete="SELECT * FROM boutique_musique WHERE no_article = '$idArticle'";
 			}
 			
 			// Lancement de la requête.
@@ -89,28 +89,27 @@
 		
 		for($i=0; $i<$_SESSION["nbr_articles"]; $i++)
 		{
-			if($_SESSION["noArticles"][$i] = $idArticle && $_SESSION["typeArticle"][$i] = $typeArticle)
+			if($_SESSION["no_article"][$i] == $idArticle AND $_SESSION["type_article"][$i] == $typeArticleChoisi)
 			{
 				$present=true;
 			}
 		}
 		
-		if ($present=true)
+		if ($present)
 			{
 				echo "<h3>Cet article est déjà présent dans votre panier. Vous avez la possibilité de modifier la quantité en affichant celui-ci.</h3>";
 			}
-			
 		else
 		// SESSION on place ces variables dans des variables de session.
 			{
-				$_SESSION["noArticles"][]=$idArticle;
-				$_SESSION["typeArticle"][]=$typeArticleChoisi;
+				$_SESSION["no_article"][]=$idArticle;
+				$_SESSION["type_article"][]=$typeArticleChoisi;
 				$_SESSION["titre"][]=$titre;
 				$_SESSION["auteur_artiste"][]=$auteur_artiste;
 				$_SESSION["prix"][]=$prix;
 				$_SESSION["quantite"][]=1; // Quantité toujours fixée à 1 par défaut pour l'article sélectionné.
 				$_SESSION["nbr_articles"]++; // Incrémentation de la quantité d'articles.
-				//echo "<h3>L'article suivant a été ajouté à votre panier électronique...</h3>";
+				echo "<h3>L'article suivant a été ajouté à votre panier électronique...</h3>";
 			}
 	}
 ?>

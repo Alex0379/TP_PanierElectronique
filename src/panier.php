@@ -32,10 +32,10 @@
 								
 						?>
 							<tr>
-								<td><?php echo $_SESSION["noArticles"][$i]; ?></td>
+								<td><?php echo $_SESSION["no_article"][$i]; ?></td>
 								<td class="mdl-data-table__cell--non-numeric"><?php echo $_SESSION["titre"][$i]; ?></td>
 								<td><?php echo $_SESSION["auteur_artiste"][$i]; ?></td>
-								<td><?php echo $_SESSION["typeArticle"][$i]; ?></td>
+								<td><?php echo $_SESSION["type_article"][$i]; ?></td>
 								<td>
 									<div class="mdl-textfield mdl-js-textfield">
 										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION["quantite"][$i]; ?>">

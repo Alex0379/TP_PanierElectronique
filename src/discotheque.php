@@ -25,7 +25,7 @@
 	<div class="reglesRecherche">
 		<h4> La Disc'O Thèque vous propose : </h4>
 		
-		<form method="post" action="">
+		
 				<div class="panier">
 					<div class="album">
 						<?php
@@ -37,6 +37,7 @@
 								{
 									$succesRecherche="YES";								
 						?>
+                        <form method="post" action="">
 							<div class="articleBiblio">
 								<div class="imageBiblio">
 									<img src="../images/guerreetpaix.jpg">
@@ -58,7 +59,7 @@
 									<input type="hidden" name="type_article_choisi" value="<?php echo $donnees["type_article"]; ?>">
 								</div>
 							</div>
-							
+							</form>
 							<?php
 								} // Fin de la boucle while
 							
@@ -74,7 +75,6 @@
 							?>
 					</div>		
 				</div>
-			</form>
 		</div>
 	</div>
 	<br />
