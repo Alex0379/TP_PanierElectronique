@@ -14,7 +14,7 @@
 				<h1>Votre panier</h1>
 			</div>
             <div class="panier">
-                <table class=" articlesPanier mdl-data-table--selectable mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                <table class=" articlesPanier mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                     <thead>
                         <tr>
                             <th>N° article</th>
@@ -37,7 +37,7 @@
 								<td><?php echo $_SESSION["auteur_artiste"][$i]; ?></td>
 								<td><?php echo $_SESSION["type_article"][$i]; ?></td>
 								<td>
-									<div class="mdl-textfield mdl-js-textfield">
+									<div class="quantitePanier mdl-textfield mdl-js-textfield">
 										<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" value="<?php echo $_SESSION["quantite"][$i]; ?>">
 										<label class="mdl-textfield__label" for="quantite1">Quantité...</label>
 										<span class="mdl-textfield__error">Ceci n'est pas un nombre !</span>

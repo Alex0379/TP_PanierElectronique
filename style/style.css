@@ -386,6 +386,10 @@ body{
     float: right;
 }
 
+.quantitePanier{
+    width: 40px !important;
+}
+
 .iconePanier{
     font-size: 16px !important;
     vertical-align: text-top !important;
